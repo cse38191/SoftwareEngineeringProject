@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_xnM1EIUlEeOFxoSAUPZrGg" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_JxkccIUoEeOFxoSAUPZrGg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XB6toIUnEeOFxoSAUPZrGg" clientDependency="_GF9wkIUsEeOFxoSAUPZrGg _MakiMIUsEeOFxoSAUPZrGg" name="DoLogin">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kYGroIUnEeOFxoSAUPZrGg" name="username" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mu9OQIUnEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mu91UIUnEeOFxoSAUPZrGg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_mu_DcIUnEeOFxoSAUPZrGg">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wqGBsIUnEeOFxoSAUPZrGg" name="password">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9GBkoIUsEeOFxoSAUPZrGg" name="authentication"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SqN4IIUoEeOFxoSAUPZrGg" name="UserForm">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YuGtMIUoEeOFxoSAUPZrGg" name="username" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZHGcAIUoEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZHHDEIUoEeOFxoSAUPZrGg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZHHqIIUoEeOFxoSAUPZrGg">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_F6-zIIUtEeOFxoSAUPZrGg" name="eisagogi.actionListener"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JezfMIUtEeOFxoSAUPZrGg" name="anazitisi.actionListener"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MFz9sIUtEeOFxoSAUPZrGg" name="metavoli.actionListener"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RMzssIUtEeOFxoSAUPZrGg" name="istoriko.actionListener"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_45P_AIUoEeOFxoSAUPZrGg" clientDependency="_9XztoIUrEeOFxoSAUPZrGg" name="LoginDialog">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MmkeMIUpEeOFxoSAUPZrGg" name="dologin" type="_XB6toIUnEeOFxoSAUPZrGg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MmkeMYUpEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MmlFQIUpEeOFxoSAUPZrGg" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_97xdsIUoEeOFxoSAUPZrGg" name="btnLogin.actionListener"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_9XztoIUrEeOFxoSAUPZrGg" name="" client="_45P_AIUoEeOFxoSAUPZrGg" supplier="_XB6toIUnEeOFxoSAUPZrGg"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_GF9wkIUsEeOFxoSAUPZrGg" name="" client="_XB6toIUnEeOFxoSAUPZrGg" supplier="_SqN4IIUoEeOFxoSAUPZrGg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IWY7EIUsEeOFxoSAUPZrGg" name="AdminFrame">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VW_qoIUsEeOFxoSAUPZrGg" name="username">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Vn7NIIUtEeOFxoSAUPZrGg" name="statistics.actionListener"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_X78eMIUtEeOFxoSAUPZrGg" name="manageUsers.actionListener"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_MakiMIUsEeOFxoSAUPZrGg" name="" client="_XB6toIUnEeOFxoSAUPZrGg" supplier="_IWY7EIUsEeOFxoSAUPZrGg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dlL0EIUsEeOFxoSAUPZrGg" clientDependency="_k8_vIIUsEeOFxoSAUPZrGg" name="DbConnection">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_iAPqIIUsEeOFxoSAUPZrGg" name="doConnect"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_k8_vIIUsEeOFxoSAUPZrGg" name="" client="_dlL0EIUsEeOFxoSAUPZrGg" supplier="_XB6toIUnEeOFxoSAUPZrGg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_clxJAIUtEeOFxoSAUPZrGg" clientDependency="_1C9QoIUtEeOFxoSAUPZrGg" name="Praxi">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fTRREIUtEeOFxoSAUPZrGg" name="id" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4388IUtEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g44kAIUtEeOFxoSAUPZrGg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_g45LEIUtEeOFxoSAUPZrGg">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i9C0IIUtEeOFxoSAUPZrGg" name="eponimo" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kZQ6gIUtEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kZQ6gYUtEeOFxoSAUPZrGg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_kZRhkIUtEeOFxoSAUPZrGg">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mNpCMIUtEeOFxoSAUPZrGg" name="onoma" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nIL-4IUtEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nIMl8IUtEeOFxoSAUPZrGg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_nINNAIUtEeOFxoSAUPZrGg">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pFgAIIUtEeOFxoSAUPZrGg" name="arpraxis" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r6bl4IUtEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r6cM8IUtEeOFxoSAUPZrGg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_r6c0AIUtEeOFxoSAUPZrGg">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tobYwIUtEeOFxoSAUPZrGg" name="KAEK" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x-ahkIUtEeOFxoSAUPZrGg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x-ahkYUtEeOFxoSAUPZrGg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_x-bIoIUtEeOFxoSAUPZrGg">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_1C9QoIUtEeOFxoSAUPZrGg" name="" client="_clxJAIUtEeOFxoSAUPZrGg" supplier="_SqN4IIUoEeOFxoSAUPZrGg"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_VGHrIIUuEeOFxoSAUPZrGg" name="Interaction1">
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_QirfsoUvEeOFxoSAUPZrGg" name="MessageRecv1" covered="_NUhhoIUvEeOFxoSAUPZrGg" message="_QirfsIUvEeOFxoSAUPZrGg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qH8fIIUuEeOFxoSAUPZrGg" name="MessageSend" covered="_e9QvYIUuEeOFxoSAUPZrGg" message="_qHrZYIUuEeOFxoSAUPZrGg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qH8fIYUuEeOFxoSAUPZrGg" name="MessageRecv" covered="_iolxoIUuEeOFxoSAUPZrGg" message="_qHrZYIUuEeOFxoSAUPZrGg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xoVHYIUuEeOFxoSAUPZrGg" name="MessageSend0" covered="_iolxoIUuEeOFxoSAUPZrGg" message="_xoUgUIUuEeOFxoSAUPZrGg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xoVHYYUuEeOFxoSAUPZrGg" name="MessageRecv0" covered="_vxuLEIUuEeOFxoSAUPZrGg" message="_xoUgUIUuEeOFxoSAUPZrGg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_QirfsYUvEeOFxoSAUPZrGg" name="MessageSend1" covered="_vxuLEIUuEeOFxoSAUPZrGg" message="_QirfsIUvEeOFxoSAUPZrGg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_e9QvYIUuEeOFxoSAUPZrGg" name="LoginDialog" coveredBy="_qH8fIIUuEeOFxoSAUPZrGg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_iolxoIUuEeOFxoSAUPZrGg" name="UserForm" coveredBy="_qH8fIYUuEeOFxoSAUPZrGg _xoVHYIUuEeOFxoSAUPZrGg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_vxuLEIUuEeOFxoSAUPZrGg" name="Anazitisi" coveredBy="_xoVHYYUuEeOFxoSAUPZrGg _QirfsYUvEeOFxoSAUPZrGg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_NUhhoIUvEeOFxoSAUPZrGg" name="Metavoli" coveredBy="_QirfsoUvEeOFxoSAUPZrGg"/>
+    <message xmi:type="uml:Message" xmi:id="_qHrZYIUuEeOFxoSAUPZrGg" name="1:doLogin" messageSort="createMessage" receiveEvent="_qH8fIYUuEeOFxoSAUPZrGg" sendEvent="_qH8fIIUuEeOFxoSAUPZrGg"/>
+    <message xmi:type="uml:Message" xmi:id="_xoUgUIUuEeOFxoSAUPZrGg" name="2:metavoli" messageSort="createMessage" receiveEvent="_xoVHYYUuEeOFxoSAUPZrGg" sendEvent="_xoVHYIUuEeOFxoSAUPZrGg"/>
+    <message xmi:type="uml:Message" xmi:id="_QirfsIUvEeOFxoSAUPZrGg" name="3:fetchData" messageSort="createMessage" receiveEvent="_QirfsoUvEeOFxoSAUPZrGg" sendEvent="_QirfsYUvEeOFxoSAUPZrGg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_p94HsIUvEeOFxoSAUPZrGg" name="Activity1" node="_s_amEIUvEeOFxoSAUPZrGg _wAMPcIUvEeOFxoSAUPZrGg _-wDWIIUvEeOFxoSAUPZrGg _EactIIUwEeOFxoSAUPZrGg _TCt-EIUwEeOFxoSAUPZrGg _XhvHEIUwEeOFxoSAUPZrGg">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_cK2AMIUwEeOFxoSAUPZrGg">
+      <body>Χρήστης</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_fpTrIIUwEeOFxoSAUPZrGg">
+      <body>Διαχειριστής</body>
+    </ownedComment>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0ikOcIUvEeOFxoSAUPZrGg" name="" source="_s_amEIUvEeOFxoSAUPZrGg" target="_wAMPcIUvEeOFxoSAUPZrGg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GuoWQIUwEeOFxoSAUPZrGg" name="Χρήστης" source="_wAMPcIUvEeOFxoSAUPZrGg" target="_-wDWIIUvEeOFxoSAUPZrGg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JpYQIIUwEeOFxoSAUPZrGg" name="Διαχειριστής" source="_wAMPcIUvEeOFxoSAUPZrGg" target="_EactIIUwEeOFxoSAUPZrGg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VpM4IIUwEeOFxoSAUPZrGg" name="Επιτυχής Είσοδος" source="_-wDWIIUvEeOFxoSAUPZrGg" target="_TCt-EIUwEeOFxoSAUPZrGg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Z4HvoIUwEeOFxoSAUPZrGg" name="ControlFlow1" source="_EactIIUwEeOFxoSAUPZrGg" target="_XhvHEIUwEeOFxoSAUPZrGg"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_s_amEIUvEeOFxoSAUPZrGg" name="InitialNode1" outgoing="_0ikOcIUvEeOFxoSAUPZrGg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_wAMPcIUvEeOFxoSAUPZrGg" name="LoginDialog" outgoing="_GuoWQIUwEeOFxoSAUPZrGg _JpYQIIUwEeOFxoSAUPZrGg" incoming="_0ikOcIUvEeOFxoSAUPZrGg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_-wDWIIUvEeOFxoSAUPZrGg" name="Εισαγωγή Στοιχείων" outgoing="_VpM4IIUwEeOFxoSAUPZrGg" incoming="_GuoWQIUwEeOFxoSAUPZrGg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_EactIIUwEeOFxoSAUPZrGg" name="Εισαγωγή Στοιχείων" outgoing="_Z4HvoIUwEeOFxoSAUPZrGg" incoming="_JpYQIIUwEeOFxoSAUPZrGg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_TCt-EIUwEeOFxoSAUPZrGg" name="Πίνακας Ελέγχου Χρήστη" incoming="_VpM4IIUwEeOFxoSAUPZrGg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_XhvHEIUwEeOFxoSAUPZrGg" name="Πίνακας Ελέγχου Διαχειριστή" incoming="_Z4HvoIUwEeOFxoSAUPZrGg"/>
+  </packagedElement>
+</uml:Model>
